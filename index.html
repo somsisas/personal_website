@@ -286,6 +286,9 @@
         transform: translateY(30px);
         position: relative;
         overflow: hidden;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
       }
 
       .cta-button::before {
@@ -690,11 +693,7 @@
           </div>
           <div class="about-visual">
             <div class="profile-photo">
-              <img
-                src="My photo.jpeg"
-                alt="Soumay Agarwal"
-                id="profileImage"
-              />
+              <img src="My photo.jpeg" alt="Soumay Agarwal" id="profileImage" />
               <div class="photo-overlay"></div>
             </div>
           </div>
@@ -876,14 +875,7 @@
         observer.observe(el);
       });
 
-      // Form submission (placeholder)
-      document
-        .querySelector(".contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert("Thanks for your message! I'll get back to you soon.");
-          this.reset();
-        });
+      // Form submission now handled by Formspree - no JavaScript interference!
 
       // Add cursor trail effect
       const createCursorTrail = () => {
