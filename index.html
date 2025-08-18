@@ -142,6 +142,30 @@
         align-items: center;
       }
 
+      .linkedin-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #667eea !important;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 2px solid rgba(102, 126, 234, 0.3);
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      .linkedin-link:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-color: rgba(102, 126, 234, 0.6);
+        transform: translateY(-2px);
+      }
+
+      .linkedin-link::after {
+        display: none !important;
+      }
+
       /* Theme toggle button */
       .theme-toggle {
         background: none;
@@ -619,6 +643,16 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/soumay-agarwal/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin-link"
+              >
+                💼 LinkedIn
+              </a>
+            </li>
             <li>
               <button
                 class="theme-toggle"
