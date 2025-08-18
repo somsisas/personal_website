@@ -597,6 +597,16 @@
         opacity: 1;
         transform: translateY(0);
       }
+
+      .experience-image {
+        width: 100%;
+        height: 200px; /* Or auto if you want height to adjust with image */
+        object-fit: contain; /* Keeps full image visible */
+        background-color: var(
+          --card-bg
+        ); /* Matches card color for padding space */
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -649,7 +659,7 @@
             elegant solutions that users love to interact with.
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap">
-            <a href="#projects" class="cta-button">View My Work</a>
+            <a href="#experience" class="cta-button">View My Work</a>
             <a
               href="Soumay Resume.pdf"
               target="_blank"
@@ -700,6 +710,53 @@
               <img src="My photo.jpeg" alt="Soumay Agarwal" id="profileImage" />
               <div class="photo-overlay"></div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title fade-in">Experience</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <img
+              src="Uplifty no.png"
+              alt="ArtSpace Gallery Screenshot"
+              class="experience-image"
+            />
+            <h3>Uplifty AI</h3>
+            <p>
+              A full-stack application helping users track their carbon
+              footprint with beautiful data visualizations and AI-powered
+              recommendations.
+            </p>
+          </div>
+
+          <div class="project-card fade-in">
+            <img
+              src="Design no.png"
+              alt="ArtSpace Gallery Screenshot"
+              class="experience-image"
+            />
+            <h3>Design Lab</h3>
+            <p>
+              Modern project management tool with real-time collaboration, built
+              with React, Node.js, and WebSocket technology.
+            </p>
+          </div>
+
+          <div class="project-card fade-in">
+            <img
+              src="UAHS.png"
+              alt="ArtSpace Gallery Screenshot"
+              class="experience-image"
+            />
+            <h3>Sensor Lab, University of Arizona Health Sciences</h3>
+            <p>
+              Interactive virtual art gallery showcasing 3D models and immersive
+              experiences using Three.js and WebGL.
+            </p>
           </div>
         </div>
       </div>
